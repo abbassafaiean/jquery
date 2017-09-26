@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Untitled Document</title>
     <script src="jquery-3.2.1.js"></script>
-    <script src="op.js"></script>
-    <script src="os.js"></script>
-
-</head>
-
+    <script src="require.js"></script>
+    <script src="config.js"></script>
+    <script src="define.js"></script>
+    <script src="ol.js"></script>
+    <script src="ew.js"></script>
+ </head>
 id:
 <input id="input" type="text" name="name" value="" maxlength="90" style="width:100px;" ></br>
 user:
@@ -16,15 +17,17 @@ user:
 phone:
 <input id="input_phone" type="text" name="name" value="" maxlength="90" style="width:100px;"></br>
 age:
-<input id="input_age" type="text" name="name" value="" maxlength="90" style="width:100px;"></br>
+<input id="input_age" type="number" name="name" value="" maxlength="90" style="width:100px;"></br>
 is@:
 <input id="input_id" type="text" name="name" value="" maxlength="90" style="width:100px;"></br>
 </br>
 user name:
-<input id="input1" type="text" name="name" value="" maxlength="90" style="width:100px;">
 <br>
-<button onclick="editUser()" id="test">submit</button></br></br></br></br>
+<button onclick="editUser()" id="test">edit</button>
+<button onclick="addUser()" id="test2">adduser</button>
 <button onclick="sendAjax()" id="test1">search with id</button>
+<button onclick="delUser()" id="test3">delUser</button>
+<button onclick="list()" id="test5">list</button>
 <div id="result"></div>
 </body>
 </html>
